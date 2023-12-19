@@ -61,7 +61,7 @@ void loop() {
     //delay(100);
 
     // Parse and display relevant information
-   // parseAndDisplay(canData[i]);
+   parseAndDisplay(canData[i]);
 
     // Wait before displaying the next message
     delay(1000);
@@ -79,6 +79,8 @@ void parseAndDisplay(String canMessage) {
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("CAN ID: " + id);
+  if (id = "152")
+    lcd.print("Sample");
   lcd.setCursor(0, 1);
   lcd.print("Bytes 1 & 2: " + bytes12);
 
