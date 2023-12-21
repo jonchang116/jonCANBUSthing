@@ -1,5 +1,8 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+#include <map>
+
+
 
 // Replace with the actual I2C address of your LCD
 LiquidCrystal_I2C lcd(0x27, 20, 4);
